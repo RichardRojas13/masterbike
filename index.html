@@ -7,84 +7,75 @@
   <meta name="keywords" content="website keywords, website keywords" />
   <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
   <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 </head>
 
 <body>
-  <div id="main">
-    <div id="header">
-      <div id="logo">
-        <div id="logo_text">
-          <!-- class="logo_colour", allows you to change the colour of the text -->
-          <h1><a href="index.html">MaterBikes<span class="logo_colour"></span></a></h1>
-          <h2>Simple. Contemporary. Website Template.</h2>
+    <div id="main">
+      <div id="header">
+        <div id="logo">
+          <div id="logo_text">
+            <!-- class="logo_colour", allows you to change the colour of the text -->
+            <h1><a href="index.html">MaterBikes<span class="logo_colour"></span></a></h1>
+          </div>
+        </div>
+        <div id="menubar">
+          <ul id="menu">
+            <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+            <li class="selected"><a href="index.html">Inicio</a></li>
+            <li><a href="examples.html">Productos</a></li>
+            <li><a href="page.html">Iniciar Sesion</a></li>
+            <li><a href="another_page.html">Registrarse</a></li>
+            <li><a href="another_page.html">Seguimiento</a></li>
+            <li><a href="contact.html">Contactenos</a></li>
+          </ul>
         </div>
       </div>
-      <div id="menubar">
-        <ul id="menu">
-          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
-          <li class="selected"><a href="index.html">Inicio</a></li>
-          <li><a href="examples.html">Productos</a></li>
-          <li><a href="page.html">Iniciar Sesion</a></li>
-          <li><a href="another_page.html">Registrarse</a></li>
-          <li><a href="another_page.html">Seguimiento</a></li>
-          <li><a href="contact.html">Contactenos</a></li>
-        </ul>
-      </div>
+
+      <div id="site_content">
+        <div class="sidebar">
+          <p>Buscar Productos</p>
+          <form method="post" action="#" id="search_form">
+            <p>
+              <input class="search" type="text" name="search_field" value="Buscar..." />
+              <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+            </p>
+          </form>
+        </div>
     </div>
-     <div id="site_content">
-      <div class="sidebar">
-        
-        <h3>Buscar Productos</h3>
-        <form method="post" action="#" id="search_form">
-          <p>
-            <input class="search" type="text" name="search_field" value="Enter keywords....." />
-            <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
-          </p>
-        </form>
-        
-      
-        
-        <h3></h3>
-        <h4></h4>
-        <h5></h5>
-        <p><br /><a href="#">Read more</a></p>
-        <p></p>
-        <h4></h4>
-        <h5></h5>
-        <p><br /><a href="#">Read more</a></p>
-        <h3></h3>
-        <ul>
-          <li><a href="#">link 1</a></li>
-          <li><a href="#">link 2</a></li>
-          <li><a href="#">link 3</a></li>
-          <li><a href="#">link 4</a></li>
-        </ul>
-      
+    
+    <div class="container text-center">    
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://www.oxfordstore.cl/media/catalog/product/cache/1/image/480x288/9df78eab33525d08d6e5fb8d27136e95/b/a/ba2963-orion-5-29-celeste-2020-01.png" width="500px" alt="First Slide">
+            </div>
+            <div class="carousel-item">
+              <img src="http://4.bp.blogspot.com/-tX9brzE8OUU/UWxcqN4Is9I/AAAAAAAAAN0/3uhaRHRMFzE/s1600/Gioconda.jpg" width="250px" alt="Second Slide">
+            </div>
+            <div class="carousel-item">
+              <img src="https://img.culturacolectiva.com/cdn-cgi/image/f=auto,w=1600,q=80,fit=contain/content/2013/08/Van_Gogh_-_Starry_Night_-_Google_Art_Project1.jpg" width="400px" alt="Third Slide">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
-      <div id="content">
-        <!-- insert the page content here -->
-        
-        <h1></h1>
-        <p> <a href="http://creativecommons.org/licenses/by/3.0"></a></p>
-        <p> <strong></strong> <strong></strong></p>
-        <p> <a href="http://www.html5webtemplates.co.uk"></a>.</p>
-        <p><a href="examples.html"></a> </p>
-        <h2></h2>
-        <p></p>
-        <ul>
-          <li>Internet Explorer 8</li>
-          <li>Internet Explorer 7</li>
-          <li>FireFox 3.5</li>
-          <li>Google Chrome 6</li>
-          <li>Safari 4</li>
-        </ul>
-      </div>
-    </div>
-   
-    <div id="content_footer"></div>
-    <div id="footer">
-      Copyright &copy; colour_green | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a href="http://www.html5webtemplates.co.uk">Website templates</a>
-    </div>
-  </div>
+
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">    
 </body>
 </html>
